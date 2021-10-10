@@ -1,0 +1,186 @@
+/* Custom properties */
+:root {
+  --spacer: 2rem;
+
+  /*Text */
+  --clr-desaturated-blue: hsl(238, 29%, 16%);
+  --clr-soft-red: hsl(14, 88%, 65%);
+  --clr-very-dark-grayish-blue: hsl(237, 12%, 33%);
+  --clr-dark-grayish-blue: hsl(240, 6%, 50%);
+
+  /* Background Gradient */
+  --clr-soft-violet: hsl(273, 75%, 66%);
+  --clr-soft-blue: hsl(240, 73%, 65%);
+
+  /* Dividers */
+
+  --clr-grayish-blue: hsl(240, 5%, 91%);
+
+  --ff-primary: "Kumbh Sans", sans-serif;
+
+  --fs-body: 0.75rem;
+
+  --fw-700: 700;
+  --fw-400: 400;
+
+  --box-shadow: 0 0.25em 1.5em rgba(0, 0, 0, 0.15);
+}
+
+/* reset */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4 {
+  line-height: 1.1;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+  padding: 0;
+}
+
+h1 {
+  color: hsl(238, 29%, 16%);
+  padding-top: 8rem;
+  text-align: center;
+  font-size: 1.75rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Utility classes */
+
+/* general styling */
+
+html {
+  font-family: var(--ff-primary), "sans-serif";
+  font-weight: var(--fw-400);
+}
+body {
+  background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* general layout */
+.boximg {
+  display: none;
+}
+.mobileimg {
+  position: relative;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  top: -1.5rem;
+  left: -1rem;
+  z-index: 1;
+  object-fit: contain;
+  display: block;
+}
+
+/* individual sections */
+
+.wrapper {
+}
+
+/* .container-img {
+  background-image: url(./images/bg-pattern-mobile.svg);
+}
+ */
+.container {
+}
+
+.container-accordion {
+  background-color: white;
+  margin-top: 1rem auto;
+  top: -7rem;
+  align-items: center;
+  max-width: 23.5rem;
+  width: 100vw;
+  height: auto;
+  position: relative;
+  background-image: url(./faq-accordion-card-main/images/bg-pattern-mobile.svg);
+  background-repeat: no-repeat;
+  background-attachment: local;
+  background-size: contain fixed;
+  background-position: top center;
+  border-radius: 1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-bottom: 3rem;
+  -webkit-box-shadow: 0px 24px 35px 0px rgba(65, 29, 124, 0.45);
+  box-shadow: 0px 24px 35px 0px rgba(65, 29, 124, 0.45);
+}
+
+.accordion * + * {
+  border-top: 1px black solid;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Accordion */
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 1.125rem;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 1.375rem;
+  transition: 0.4s;
+}
+
+.active,
+.accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: "\2304";
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 0px;
+}
+
+.active:after {
+  content: "\2303";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: /* max-height */ 0.2s ease-out;
+}
