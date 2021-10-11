@@ -102,16 +102,6 @@ body {
 
 /* individual sections */
 
-.wrapper {
-}
-
-/* .container-img {
-  background-image: url(./images/bg-pattern-mobile.svg);
-}
- */
-.container {
-}
-
 .container-accordion {
   background-color: white;
   margin-top: 1rem auto;
@@ -148,7 +138,7 @@ body {
 
 /* Accordion */
 .accordion {
-  background-color: #eee;
+  background-color: white;
   color: #444;
   cursor: pointer;
   padding: 1.125rem;
@@ -156,13 +146,17 @@ body {
   border: none;
   text-align: left;
   outline: none;
-  font-size: 1.375rem;
+  font-weight: var(--fw-400);
   transition: 0.4s;
+}
+
+.accordion:active p:first-of-type {
+  color: red;
 }
 
 .active,
 .accordion:hover {
-  background-color: #ccc;
+  color: tansparent;
 }
 
 .accordion:after {
@@ -183,4 +177,64 @@ body {
   max-height: 0;
   overflow: hidden;
   transition: /* max-height */ 0.2s ease-out;
+}
+
+@media (min-width: 40rem) {
+  .wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .container-accordion {
+    display: block;
+    max-width: 57.5rem;
+    height: auto;
+    margin-top: 2rem;
+    width: 100vw auto;
+    background-image: url(./images/illustration-woman-online-desktop.svg),
+      url(./images/bg-pattern-desktop.svg);
+    background-position-x: -5.7rem, -35rem;
+    background-position-y: 5rem, -17.5rem;
+    background-attachment: local, local;
+    background-size: 30rem 22.75rem, 60rem 58.063rem;
+    background-repeat: no-repeat, no-repeat;
+    -webkit-box-shadow: 5px 18px 28px 11px rgba(65, 29, 124, 0.45);
+    box-shadow: 5px 18px 28px 11px rgba(65, 29, 124, 0.45);
+  }
+
+  h1 {
+    display: inline-block;
+    width: auto;
+    text-align: justify;
+    margin-left: 30rem;
+    position: relative;
+    bottom: 4.5rem;
+  }
+  .container-img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .mobileimg {
+    display: none;
+  }
+
+  .boximg {
+    position: relative;
+    top: -1.2rem;
+    left: 4.2rem;
+    width: 10.8rem;
+    display: block;
+    z-index: 1;
+    height: auto;
+  }
+  .accordion,
+  .panel {
+    display: block;
+    max-width: 22.438rem;
+    margin-left: 30rem;
+    position: relative;
+    bottom: 4rem;
+    width: auto;
+  }
 }

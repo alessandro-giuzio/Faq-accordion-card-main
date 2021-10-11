@@ -8,7 +8,6 @@ This is a solution to the [FAQ accordion card challenge on Frontend Mentor](http
 - [Links](#links)
 - [Built with](#built-with)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ### The challenge
 
@@ -33,10 +32,6 @@ Users should be able to:
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+- Website - Alessandro https://www.giuzio.me
+- Frontend Mentor - @elsimater https://www.frontendmentor.io/profile/elsimater
+- Twitter - @giuzioale https://twitter.com/giuzioale
