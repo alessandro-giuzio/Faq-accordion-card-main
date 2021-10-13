@@ -102,6 +102,14 @@ body {
 
 /* individual sections */
 
+.wrapper {
+  align-items: baseline;
+}
+
+.container-img {
+  top: 7.4rem;
+}
+
 .container-accordion {
   background-color: white;
   margin-top: 1rem auto;
